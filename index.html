@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="TripDesk.hu - Online Hotelmenedzsment és foglalási rendszer. A legegyszerűbb megoldás szállása stresszmentes menedzsmentjéhez">
+    <meta name="author" content="">
+    <title>TripDesk - Online Hotelmenedzsment és foglalási rendszer</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css?v=1" rel="stylesheet">
+    <link rel='stylesheet' id='cc-css_v3-css'  href='https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css?ver=1.6.0' type='text/css' media='all' />
+
+    <style>
+        .jumbotron {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        .jumbotron p:last-child {
+            margin-bottom: 0;
+        }
+
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+
+        .jumbotron .container {
+            max-width: 40rem;
+        }
+
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        footer p {
+            margin-bottom: .25rem;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155316924-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155316924-4');
+    </script>
+
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var owa_baseUrl = 'https://metrics.monster/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', '385f8b3e6e8e71d73f9b29068fa7860a']);
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
+
+        (function() {
+            var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+            owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+            _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+            var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+        }());
+        //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
+</head>
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">A TripDesk fejlesztőjéről</h4>
+                    <p class="text-muted">Az <a href="https://icoders.co" target="_blank" rel="noopener"
+                                                style="color: white">ICONOCODERS</a> csapat tagjainak útja sok évnyi
+                        céges és szabadúszó munkatapasztalat után keresztezte egymást. Két dolog hozott össze bennünket.
+                        Egyrészt mindannyian olyan munkafolyamatot követő környezetben akartunk dolgozni, ahol a
+                        projektek valamennyi munkafázisa egy helyen, aktív kommunikáció mellett, azonos minőségben
+                        zajlik. Másrészt, hogy még mindig nyitottak vagyunk, akarunk újat tanulni, kritikusan és
+                        kreatívan értékelni, alkalmazni a bevált vagy újító megoldásokat.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Lépjen velünk kapcsolatba</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto: support@icoders.co" class="text-white">Írjon
+                            nekünk emailt</a></li>
+                        <li><a href="tel:06308253995" class="text-white">Hívjon minket telefonon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark fixed-top bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <strong>TripDesk</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Trip<b>Desk</b>.hu</h1>
+            <p class="lead text-muted">A legegyszerűbb megoldás szállása stresszmentes menedzsmentjéhez</p>
+            <p>A TripDesk-el egy eszköz független, könnyen kezelhető alkalmazáson keresztül menedzselheti szállodája,
+                panziója szobáit, vendégeit és szolgáltatásait. Célunk egy olyan rendszer kifejlesztése volt, amely az
+                első lépéstől az Ön és vendégei kényelmét szolgálja.</p>
+            <p>
+                <a href="try.html?request=demo" class="btn btn-primary my-2">Érdekel, kipróbálom!</a>
+                <a href="mailto: support@tripdesk.hu" class="btn btn-secondary my-2">Tovább információt
+                    kérek</a>
+            </p>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="alert alert-warning">
+                <b>Segítse a Tripdesk fejlesztését!</b> <a href="https://shrt.hu/tripdeskbusiness">Mondja el nekünk</a> milyen az Ön számára tökéletes foglalási rendszer!
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/interface.jpg" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>Letisztult felhasználói felület</b>
+                            </p>
+                            <p class="card-text">A TripDesk-el vendégei gyorsan és egyszerűen foglalhatnak Önhöz
+                                szobákat akár mobil eszközről is, és akár azonnal fizethetnek bankkártyával is.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/dashboard.jpg" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>Átlátható menedzsment portál</b>
+                            </p>
+                            <p class="card-text">Admin felületünkön naprakészen és egyszerűen áttekintheti az aktuális
+                                foglalásait, kezelheti szabad szobáit és vendégei adatait.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/ntak.jpg" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>100% NTAK Kompatibilitás</b>
+                            </p>
+                            <p class="card-text">Alkalmazásunk 100% <a href="https://info.ntak.hu/" target="_blank"
+                                                                       rel="noopener">NTAK</a> kompatibilis, megfelel a
+                                technikai feltételeknek. Az adatszolgáltatás teljesen automatikus az Ön legnagyobb
+                                nyugalma érdekében.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/responsive.jpg" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>Eszközfüggetlen</b>
+                            </p>
+                            <p class="card-text">Nincs szükség költséges hardveres beruházásra, a TripDesk egy
+                                böngészőben futó alkalmazás, bármikor bárhonnan elérheti azt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/booking.png" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>Booking.com integráció</b>
+                            </p>
+                            <p class="card-text">Rendelkezik Booking.com fiókkal? Foglalásait mostantól egyszerűen a
+                                TripDesk-ből kezelheti integrációnknak köszönhetően.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="img-responsive" src="/media/social.jpg" width="100%" height="225"/>
+                        <div class="card-body">
+                            <p class="text-center">
+                                <b>Közösségi média</b>
+                            </p>
+                            <p class="card-text">Igény esetén vállaljuk közösségi oldalainak teljeskörű menedzsmentjét
+                                is (Instagram/Facebook), valamint fotózásban is tudunk segíteni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Kipróbálná?</h1>
+            <p class="lead text-muted">Ha felkeltettük érdeklődését ne habozzon, lépjen velünk kapcsolatba!</p>
+            <p>A TripDesk BÉTA verziója <b>elindult</b>, melyhez most ingyenes teszt lehetőséget biztosítunk
+                leendő partnerünknek. Legyen köztük Ön is!</p>
+            <p>
+                <a href="try.html?request=demo" class="btn btn-primary btn-lg my-2">Kérem a demo verziót!</a>
+            </p>
+        </div>
+    </section>
+
+    <hr />
+</main>
+
+<footer class="text-muted">
+    <div class="container">
+        <div class="float-right">
+            <ul>
+                <li><a href="https://shrt.hu/tripdeskbusiness">Önnek milyen a tökéletes szállodai szoftver?</a></li>
+                <li><a href="https://shrt.hu/tripdeskcustomer">Osszd meg velünk utazási szokásaid!</a></li>
+            </ul>
+        </div>
+
+        <p>TripDesk.hu - Online Hotelmenedzsment és foglalási rendszer</p>
+        <p>A TripDesk-et 10+ éves webes tapasztalattal a háta mögött az <a href="https://icoders.co" target="_blank"
+                                                                           rel="noopener">Iconocoders</a>
+            fejleszti.<br/>
+            Az illusztrációkat az <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> biztosítja
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js?v=1"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js?ver=1.6.0'></script>
+
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3937a3",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "content": {
+        "allow": "Cookiek<br/> engedélyezése",
+        "message": "A weboldalon sütiket használunk annak érdekében, hogy látogatóink igényeinek megfelelő szolgáltatásokat nyújthassunk, illetve számukra releváns ajánlatokat jeleníthessünk meg, vagy küldhessünk a későbbiekben. Ez magába foglal olyan sütiket is, amelyek nyomon követik weboldalaink használatát.",
+        "dismiss": "Rendben",
+        "deny": "Elutasítom",
+        "link": "További információk",
+        "href": "https://adatvedelemgdpr.info/"
+      }
+    })});
+</script>
+
+</body>
+</html>
